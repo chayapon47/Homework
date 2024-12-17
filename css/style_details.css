@@ -1,0 +1,35 @@
+* {margin: 0;     padding: 0;     box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+} body {     line-height: 1.6;     color: #333;     background-color: #f9f9f9; 
+} header {     background: #f3d034;     color: white;     padding: 1rem 0;     text-align: center; 
+}  header h1 {     margin-bottom: 0.5rem; 
+} nav ul {     list-style: none;     display: flex;     justify-content: center;     gap: 1rem; 
+} nav a {     text-decoration: none;     color: white;     font-weight: bold; 
+}  nav a:hover {     text-decoration: underline; 
+} main {     padding: 2rem;     max-width: 1200px;     margin: auto; 
+}  h2 {     color: #f3d034;     margin-bottom: 1rem; 
+} 
+
+article {     background: white;     padding: 1rem;     margin-bottom: 1rem;     box-shadow: 0 2px 4px rgba(22, 21, 21, 0.1);     text-align: center; 
+} article img {     max-width: 100%;     height: auto;     margin-bottom: 1rem; 
+} form {     background: white;     padding: 2rem;     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     max-width: 600px;     margin: auto;     border-radius: 5px; 
+} label {     display: block;     margin: 0.5rem 0 0.25rem;     font-weight: bold; 
+} input, textarea {     width: 100%;     padding: 0.5rem;     margin-bottom: 1rem;     border: 1px solid #ccc;     border-radius: 5px; 
+}  button {     background: #f3d034;     color: white;     border: none;     padding: 0.75rem 1.5rem;     cursor: pointer;     font-size: 1rem;     border-radius: 5px; 
+} button:hover { 
+    background: #f3d034; 
+} footer {text-align: center; 
+    padding: 1rem; 
+    background: #f3d034;     color: white;     position: relative;     bottom: 0;     width: 100%; 
+}.hamburger {     display: none;     font-size: 30px;     cursor: pointer; 
+} nav ul {     list-style-type: none;     display: flex;     gap: 15px; 
+} @media (max-width: 768px) { .hamburger { 
+        display: block;  
+    }     nav ul { 
+        display: none;flex-direction: column;background-color: #f3d034;position: absolute;top: 60px;left: 0;width: 100%;text-align: center;padding: 10px 0; 
+    }     nav ul.show { 
+        display: flex;
+ 
+}
+} 
+ 
