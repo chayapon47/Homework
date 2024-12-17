@@ -1,14 +1,17 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ติดต่อเรา</title> 
-        <link rel="stylesheet" href="css/style_contact.css"> 
-    </head> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ติดต่อเรา</title> 
+    <link rel="stylesheet" href="css/style_contact.css"> 
+</head> 
 <body> 
     <header> 
         <h1>ติดต่อเรา</h1> 
-        <nav> 
+        <div class="hamburger" onclick="toggleMenu()"> 
+            &#9776;
+        </div> 
+        <nav id="navMenu"> 
             <ul> 
                 <li><a href="index.html">หน้าแรก</a></li> 
                 <li><a href="details.html">สถานที่ท่องเที่ยว</a></li> 
@@ -19,20 +22,19 @@
     <main> 
         <form> 
                 <label for="name">ชื่อ-นามสกุล:</label> 
-                <input type="text" id="name" name="name" required> <br> 
+                <input type="text" id="name" name="name" required> <br>                 
                 <label for="email">อีเมล:</label> 
                 <input type="email" id="email" name="email" required> <br> 
-                <label for="phone">เบอร์โทรศัพท์:</label> 
+                <label for="phone">เบอร์โทรศัพท์</label> 
                 <input type="tel" id="phone" name="phone"> <br> 
            <label for="message">ข้อความ:</label> 
-                <textarea id="message" name="message" required></textarea> 
-<br> 
+                <textarea id="message" name="message" required></textarea> <br> 
                 <button type="submit">ส่งข้อความ:</button> 
             </form> 
         </main> 
         <footer> 
             <h3><p>&copy; 2024 จังหวัดฉะเชิงเทรา</p></h3> 
-        </footer> 
-         
+        </footer>  <script> function toggleMenu() {const navMenu = document.getElementById("navMenu").querySelector("ul");navMenu.classList.toggle("show");  } 
+    </script> 
     </body> 
-</html> 
+</html>     
