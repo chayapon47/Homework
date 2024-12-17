@@ -1,16 +1,17 @@
-<!DOCTYPE html> 
 <html lang="en"> 
-    html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>สถานที่ท่องเที่ยวในจังหวัดฉะเชิงเทรา</title> 
-        <link rel="stylesheet" href="css/style_details.css"> 
-    </head> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>สถานที่ท่องเที่ยวในจังหวัดฉะเชิงเทรา</title> 
+    <link rel="stylesheet" href="css/style_details.css"> 
+</head> 
 <body> 
     <header> 
-        <h1>๕ สถานที่ HIGHLIGHT ในจังหวัดฉะเชิงเทรา</h1> 
-        <nav> 
+        <h1>5 สถานที่ HIGHLIGHT ในจังหวัดฉะเชิงเทรา</h1> 
+        <div class="hamburger" onclick="toggleMenu()"> 
+            &#9776;
+        </div> 
+        <nav id="navMenu"> 
             <ul> 
                 <li><a href="index.html">หน้าแรก</a></li> 
                 <li><a href="details.html">สถานที่ท่องเที่ยว</a></li> 
@@ -55,6 +56,9 @@
     </main> 
     <footer> 
         <h3><p>&copy; 2024 จังหวัดฉะเชิงเทรา</p></h3> 
-    </footer> 
-</body> 
-</html>
+    </footer>     
+    <script>        
+    function toggleMenu() { const navMenu = document.getElementById("navMenu").querySelector("ul"); navMenu.classList.toggle("show"); } 
+    </script> 
+    </body> 
+    </html>
