@@ -9,7 +9,10 @@
 <body> 
     <header> 
         <h1>สถานที่ท่องเที่ยวจังหวัดฉะเชิงเทรา</h1> 
-        <nav> 
+        <div class="hamburger" onclick="toggleMenu()"> 
+            &#9776; 
+        </div> 
+        <nav id="navMenu"> 
             <ul> 
                 <li><a href="index.html">หน้าแรก</a></li> 
                 <li><a href="details.html">สถานที่ท่องเที่ยว</a></li> 
@@ -39,5 +42,10 @@
     <footer> 
         <h3><p>&copy; 2024 จังหวัดฉะเชิงเทรา</p></h3> 
     </footer> 
+    <script> 
+        function toggleMenu() { 
+            const navMenu = document.getElementById("navMenu").querySelector("ul");             navMenu.classList.toggle("show"); 
+        } 
+    </script> 
 </body> 
 </html>
