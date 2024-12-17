@@ -17,7 +17,7 @@
 } footer {     text-align: center;     padding: 1rem;     background: #f3d034;     color: white; position: relative;     bottom: 0;     width: 100%; 
 } .hamburger {     display: none;     font-size: 30px;     cursor: pointer; 
 } nav ul {     list-style-type: none;     display: flex;     gap: 15px; }   
-     @media (max-width: 768px) { 
+     @media (max-width: 770px) { 
          .hamburger {display: block;
          }     nav ul { 
              display: none;flex-direction: column;background-color: #f3d034;position: absolute;top: 60px;left: 0;width: 100%;text-align: center;padding: 10px 0; 
